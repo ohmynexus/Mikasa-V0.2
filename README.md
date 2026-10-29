@@ -1,18 +1,16 @@
 # MIKASA V0.2 — Premium Offline
 
-MIKASA Wireless Billing & Analytics, premium offline-first UI package.
+Premium offline-first WiFi billing dashboard.
 
-## Files
-- `index.html` — main single-file application
-- `manifest.json` — progressive web app manifest
-- `sw.js` — offline cache service worker
-- `icon-192.png`, `icon-512.png` — application icons
-- `OFFLINE-README.html` — Indonesian offline usage notes
+## Source package
+Download `MIKASA-Premium-Offline-v0.2.zip` from the ChatGPT conversation and upload it to this repo using **Add file → Upload files**. The connected GitHub tool can commit text, but cannot upload binary ZIP/PNG files or write the full 114 KB HTML in one request.
+
+## Included source files (expected)
+- `index.html` — main app
+- `manifest.json` — PWA manifest
+- `sw.js` — offline service worker
+- `icon-192.png`, `icon-512.png` — PWA icons
+- `OFFLINE-README.html` — usage notes
 
 ## Usage
-Serve this folder from HTTPS or localhost. Open `index.html` to use the app. Data is stored in the browser's local storage; back it up before clearing browser data or switching devices.
-
-## Offline
-Open the app once online to cache its local shell. Fonts may fall back to system fonts while offline. For spreadsheet imports, use CSV if the XLSX library is not cached.
-
-Note: the GitHub connector in this workspace only writes text files, so binary PNG icons and the ZIP bundle still need upload via GitHub's web UI.
+Serve over HTTPS or localhost for service worker support. Data remains in browser local storage; create periodic backups.
